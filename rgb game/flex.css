@@ -1,0 +1,101 @@
+html {
+	width: 100%;
+	/*height: 100%;*/
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #232323;
+  margin: 0;
+  padding: 0;
+}
+/*header section start*/
+header h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #ffff;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  background-color: steelblue;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+header p {
+  margin: 0;
+  padding: 0.5rem 0.5rem;
+}
+#color-display {
+  padding: 0;
+  margin: 0;
+  font-size: 3.5rem;
+}
+/*header section end*/
+
+/*NAVBAR section*/
+ul.navbar {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #ffff;
+  min-height: 2rem;
+  text-align: center;
+  align-items:stretch;
+  justify-content: center;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+
+section ul.navbar button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  color: steelblue;
+  border: none;
+  font-weight: 600;
+  background: none;
+  outline: none;
+  transition: all 0.3s;
+}
+section ul.navbar span {
+  min-width: 25%;
+  font-size: 1rem;
+  text-align:center;
+  align-self: center;
+}
+
+section ul button.active-btn {
+  background-color: steelblue; 
+  color: white;
+}
+
+section ul.navbar button:hover {
+  background-color: steelblue;
+  color: white;
+}
+/*NAVBAR section end*/
+
+/*Squares section */
+.square{
+  border-radius: 15%;
+  list-style: none; 
+  width: 30%;
+  background: purple;
+  padding-bottom: 30%;
+  float: left;
+  margin: 1.66%;
+  transition: background 0.5s;
+}
+.squares-container ul{
+  padding: 0;
+  
+}
+
+.squares-container{
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 600px;
+}
