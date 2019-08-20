@@ -1,6 +1,5 @@
 html {
 	width: 100%;
-	/*height: 100%;*/
 }
 
 body{
@@ -9,6 +8,7 @@ body{
   margin: 0;
   padding: 0;
 }
+
 /*header section start*/
 header h1 {
   font-weight: 500;
@@ -26,6 +26,7 @@ header p {
   margin: 0;
   padding: 0.5rem 0.5rem;
 }
+
 #color-display {
   padding: 0;
   margin: 0;
@@ -48,7 +49,6 @@ ul.navbar {
   text-transform: uppercase;
 }
 
-
 section ul.navbar button {
   font-family: 'Roboto', sans-serif;
   font-size: 1.3rem;
@@ -60,6 +60,7 @@ section ul.navbar button {
   outline: none;
   transition: all 0.3s;
 }
+
 section ul.navbar span {
   min-width: 25%;
   font-size: 1rem;
@@ -89,6 +90,7 @@ section ul.navbar button:hover {
   margin: 1.66%;
   transition: background 0.5s;
 }
+
 .squares-container ul{
   padding: 0;
   
