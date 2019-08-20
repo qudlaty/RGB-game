@@ -94,8 +94,8 @@ function changeAllSquares(color) {
 
 //randomize winner
 function choseColor() {
-  let radnom = Math.floor(Math.random() * colors.length);
-  return colors[radnom];
+  let random = Math.floor(Math.random() * colors.length);
+  return colors[random];
 }
 
 function generateRandomColors(nums) {
