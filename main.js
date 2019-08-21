@@ -63,13 +63,13 @@ function btnsReset() {
   //chaneg message
   messageDisplay.textContent =''; 
   //change color of squares 
-  
   squares.forEach( (square, index, array) => { 
     let color = colors[index]
     if(color) {
     	square.style.display = "block";
       square.style.backgroundColor = color;
-    } else {
+    } 
+    else {
     	square.style.display = "none";
     }
   });
