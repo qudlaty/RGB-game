@@ -20,12 +20,12 @@ function init() {
 function setUpSquares() {
   // EASY/HARD modeBtns event lister
   modeBtns.forEach(modeBtn => {
-    modeBtn.addEventListener('click', function(){
+    modeBtn.addEventListener('click', () => {
       modeBtns[0].classList.remove("active-btn");
       modeBtns[1].classList.remove("active-btn");
-      this.classList.add("active-btn");
-      //ternary operator
-      this.textContent === "EASY" ? numSquares = 3: numSquares = 6;
+      modeBtn.classList.add("active-btn");
+      //ternary operator - fancy if
+      modeBtn.textContent === "EASY" ? numSquares = 3: numSquares = 6;
       btnsReset();  
     });
   });
@@ -62,27 +62,27 @@ function btnsReset() {
   h1Background.style.backgroundColor = "rgb(70, 130, 180)";
   //chaneg message
   messageDisplay.textContent =''; 
-  //change color of squares  
-  for(let i=0; i<squares.length; i++){
-    if(colors[i]) {
-      squares[i].style.display = "block";
-      squares[i].style.backgroundColor = colors[i];
+  //change color of squares 
+  
+  squares.forEach( (square, index, array) => { 
+    let color = colors[index]
+    if(color) {
+    	square.style.display = "block";
+      square.style.backgroundColor = color;
     } else {
-      squares[i].style.display = "none";
+    	square.style.display = "none";
     }
-  }
+  });
   //change btn text
   if(btnNew.textContent === "TRY AGAIN"){
     btnNew.textContent = "NEW";
-  };
+  }
 }   
 
 //NEW btn
 btnNew.addEventListener('click', () => {
   btnsReset();
 });
-
-//colorDisplay.textContent = pickedColor; 
 
 //win change tiles 
 function changeAllSquares(color) {
@@ -94,8 +94,8 @@ function changeAllSquares(color) {
 
 //randomize winner
 function choseColor() {
-  let random = Math.floor(Math.random() * colors.length);
-  return colors[random];
+  let radnom = Math.floor(Math.random() * colors.length);
+  return colors[radnom];
 }
 
 function generateRandomColors(nums) {
@@ -106,9 +106,7 @@ function generateRandomColors(nums) {
     arr.push(randomColor());
   }
   return arr;
-  //return that arr
 }
-
 
 function randomColor(){
   // pick r g b 0-255 
