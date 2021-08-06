@@ -1,6 +1,6 @@
 
 let colors = [],
-    numSquares = 6,
+    numSquares = 9,
     pickedColor,
     squares = document.querySelectorAll(".square"),
     colorDisplay = document.getElementById("color-display"),
@@ -25,7 +25,7 @@ function setUpSquares() {
       modeBtns[1].classList.remove("active-btn");
       modeBtn.classList.add("active-btn");
       //ternary operator - fancy if
-      modeBtn.textContent === "EASY" ? numSquares = 3: numSquares = 6;
+      modeBtn.textContent === "EASY" ? numSquares = 3: numSquares = 9;
       btnsReset();  
     });
   });
